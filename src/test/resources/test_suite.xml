@@ -1,7 +1,12 @@
 <suite name="suite">
-    <test name="test suite">
+    <test name="yandex">
         <classes>
             <class name="ru.yandex.mail.YandexMailTest" />
+        </classes>
+    </test>
+    <test name="reqres">
+        <classes>
+            <class name="my.selenium.TestReqres" />
         </classes>
     </test>
 </suite>
