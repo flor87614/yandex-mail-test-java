@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Program {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver", System.getenv("CHROME_DRIVER"));
 
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
